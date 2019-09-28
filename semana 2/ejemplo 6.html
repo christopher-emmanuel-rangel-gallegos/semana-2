@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model / Margin & Padding</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: content-box; */
+      box-sizing: border-box;
+    }
+    .container {
+      width: 400px; /*tamaño del cuadro*/
+      margin: auto;
+    }
+    .box {
+      background: #a4a4a4; /*fondo recuadro*/
+      border: 2px #777 solid;
+      width: 100%;
+      /* Padding en todos los lados */
+      /* padding: 20px; */
+      /* Padding por lado */
+      /* padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px; */
+      /* Padding shorthand = top, right, bottom, left */
+      /* padding: 10px 20px 10px 20px; */
+      /* Padding shorthand = top/bottom left/right */
+      padding: 10px 20px;
+      /* Margin en todos los lados */
+      /* margin: 20px; */
+      /* Margin por lado */
+      /* margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px; */
+      /* Margin shorthand = top, right, bottom, left */
+      /* margin: 10px 20px 10px 20px; */
+      /* Margin shorthand = top/bottom left/right */
+      margin: 10px 20px;
+    }
+    .box h3 {
+        padding-bottom: 40px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>Box One</h3>
+      <p> HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del lenguaje HTML. Esta nueva versión (aún en desarrollo), y en conjunto con CSS3,
+         define los nuevos estándares de desarrollo web, rediseñando el código para resolver problemas y actualizándolo así a nuevas necesidades.</p>
+      <div class="box">
+        <h3>Box Two</h3>
+        <p>HTML5 está destinado a sustituir no sólo HTML 4, sino también XHTML 1 y DOM Nivel 2. Esta versión
+          nos permite una mayor interacción entre nuestras páginas web y el contenido media (video, audio, entre otros) </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
